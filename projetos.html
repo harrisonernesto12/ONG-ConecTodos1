@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Página Web</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+
+
+<header class="header">
+
+  <div>
+    <div>
+      <div class="conteiner-logo">
+        <h1>ConecTodos</h1> <img src="assets/LogoCnt.png" alt="">
+      </div>
+      <div>
+        <p>Transformando vidas através da tecnologia.</p>
+      </div>
+
+      <nav>
+        <a href="Index.html">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </div>
+  <div>
+    <div class="card-button">
+      <div class="login-button">
+        <a href="cadastro.html" id="loginLink" class="btn-login">Login</a>
+        <button id="logoutBtn" class="btn-login">logout</button>
+        <span id="userLabel" style="margin-left:10px;color:white;"></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Modal de login -->
+<div id="loginModal" style="display:none;">
+  <form id="loginForm" style="background:#fff;padding:16px;border-radius:8px;">
+
+    <h3>Login</h3>
+    <label for="username">Usuário</label>
+    <input id="username" name="username" required>
+    <label for="password">Senha</label>
+    <input id="password" type="password" name="password" required>
+    <div style="margin-top:8px;">
+      <button type="submit">Entrar</button>
+      <button type="button" id="closeLogin">Cancelar</button>
+    </div>
+    <p id="loginError" style="color:#b00"></p>
+  </form>
+</div>
+
+<body>
+  <div class="title1">
+    <h1>Nossos Projetos</h1>
+    <p>Conheça os projetos que estamos desenvolvendo:</p>
+  </div>
+
+  <div class="cards-container">
+    <div class="card">
+      <img src="/assets/boypc.png" alt="">
+      <div>
+        <h2>Capacitação</h2>
+        <div>
+          <button>Saiba Mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/assets/childspc.png" alt="">
+      <div>
+        <h2>Inclusão</h2>
+        <button>Saiba Mais</button>
+
+      </div>
+    </div>
+    <div class="card">
+      <img src="/assets/concientizacao.png" alt="">
+      <div>
+        <h2>Conscientização</h2>
+        <button>Saiba Mais</button>
+      </div>
+    </div>
+    <div class="add-card-form" data-role="administrador">
+      <h3>Adicionar novo projeto</h3>
+      <input type="text" id="titulo" placeholder="Título do projeto">
+      <input type="text" id="imagem" placeholder="Caminho da imagem (ex: /assets/foto.png)">
+      <button id="addBtn">Adicionar</button>
+    </div>
+  </div>
+
+<h1>Mídias</h1>
+
+  <div class="midias">
+
+    <div><img src="/assets/fotosDasMidias/ft1.jpg" alt="foto de 3 cachorros"></div>
+    <div><img src="/assets/fotosDasMidias/ft2.jpg" alt="foto de crianças"></img></img></img></div>
+    <div><img src="/assets/fotosDasMidias/ft3.jpg" alt="foto de pessoas juntando as mãos"></div>
+    <div><img src="/assets/fotosDasMidias/ft4.jpg" alt="foto de veios"></div>
+
+  </div>
+  <div class=cadastro-conteiner>
+    <h2>Faça parte da nossa rede de transformação digital</h2>
+    <p>Faça parte da nossa rede de transformação digital
+      A Conexão para Todos acredita que a tecnologia pode ser uma ponte poderosa para o futuro e queremos que você
+      caminhe conosco nessa missão.
+      Cadastre-se e faça parte da nossa comunidade de pessoas comprometidas com a inclusão digital e a construção de um
+      mundo mais justo e conectado.
+      Se você é um jovem em busca de oportunidades, um voluntário que deseja compartilhar conhecimento, ou um apoiador
+      que quer contribuir para nossos projetos, o primeiro passo começa aqui: o cadastro.
+      Ao preencher suas informações, você poderá:
+      Participar de cursos e oficinas gratuitas de tecnologia e cidadania digital;
+      Acompanhar projetos sociais e oportunidades de voluntariado;
+      Contribuir com doações e campanhas de arrecadação;
+      Receber notícias, convites e certificados digitais de participação;
+      Fazer parte de uma rede colaborativa de aprendizado e impacto social.
+      Todos os dados são tratados com sigilo e responsabilidade, seguindo nossa política de transparência.
+      Após o cadastro, você poderá acessar sua área personalizada e acompanhar de perto as ações da ONG.
+      ✨ Conecte-se. Colabore. Transforme vidas.</p>
+
+    <a href="cadastro.html"> <button>Cadastre-se</button></a>
+
+
+  </div>
+
+</body>
+
+
+<footer id="contato">
+
+  <div>
+    <ul>
+      <h2>Contato</h2>
+      <li>Contato: (99) 99999-9999</li>
+      <li>Email: conctodos@cnt.com</li>
+      <li>Endereço: Rua dos Bobos, nº0 - Porto Algre, RS</li>
+    </ul>
+  </div>
+
+  <span>
+    <p>&copy 2025 ConecTodos. Todos os direitos reservados.</p>
+  </span>
+</footer>
+</body>
