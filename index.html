@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Página Web</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+
+
+<header class="header">
+
+  <div>
+    <div>
+      <div class="conteiner-logo">
+        <h1>ConecTodos</h1> <img src="assets/LogoCnt.png" alt="">
+      </div>
+      <div>
+        <p>Transformando vidas através da tecnologia.</p>
+      </div>
+
+      <nav>
+        <a href="Index.html">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </div>
+  <div>
+    <div class="card-button">
+      <div class="login-button">
+        <a href="cadastro.html" id="loginLink" class="btn-login">Login</a>
+        <button id="logoutBtn" class="btn-login">logout</button>
+        <span id="userLabel" style="margin-left:10px;color:white;"></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="loginModal" style="display:none;">
+  <form id="loginForm" style="background:#fff;padding:16px;border-radius:8px;">
+
+    <h3>Login</h3>
+
+    <label for="username">Usuário</label>
+    <input id="username" name="username" required>
+    <label for="password">Senha</label>
+    <input id="password" type="password" name="password" required>
+    <div style="margin-top:8px;">
+      <button type="submit">Entrar</button>
+      <button type="button" id="closeLogin">Cancelar</button>
+    </div>
+    <p id="loginError" style="color:#b00"></p>
+  </form>
+</div>
+
+<body>
+
+  <div class="title1">
+    <h1>Bem-vindo à ConecTodos</h1>
+    <p>Junte-se a nós na missão de capacitar jovens em vulnerabilidade social através da tecnologia.</p>
+  </div>
+
+  <div class="pic-conteiner">
+    <img src="assets/inlcusaoindex.jpg" alt="">
+  </div>
+
+
+
+  <div class="info-section">
+    <article id="sobre">
+      <H3>Sobre Nós</H3>
+      <p>A ConecTodos nasceu com o propósito de transformar vidas por meio da educação digital. Acreditamos que o acesso
+        ao conhecimento em informática é uma poderosa ferramenta de inclusão social e de construção de futuros mais
+        justos e cheios de oportunidades.
+        Nosso trabalho é voltado para crianças em situação de vulnerabilidade, oferecendo aulas gratuitas de informática
+        básica em um ambiente acolhedor, seguro e inspirador. Aqui, cada criança tem a chance de aprender a usar o
+        computador, desenvolver habilidades digitais e descobrir novas possibilidades para o futuro.
+        Mais do que ensinar tecnologia, queremos formar cidadãos preparados, conscientes e confiantes de que podem
+        conquistar seus sonhos.
+        Com o apoio de voluntários, parceiros e doações, seguimos firmes em nossa missão: reduzir a desigualdade digital
+        e abrir portas para um mundo de oportunidades.Somos uma organização sem fins lucrativos com o objetivo de
+        proporcionar o ingresso de jovens em vulnerabilidade social ao mundo digital.</p>
+    </article>
+    <p>Nossos projetos são focados em capacitar jovens em vulnerabilidade social através da tecnologia. Oferecemos
+      cursos de informática básica, programação e desenvolvimento web, além de workshops sobre segurança digital e
+      cidadania online. Cada projeto é desenvolvido com o objetivo de proporcionar habilidades práticas que possam abrir
+      portas para oportunidades educacionais e profissionais.</p>
+  </div>
+  <div class="conteiner-mvv">
+    <div class="card-mvv">
+      <h2>Missão</h2>
+      <p>Capacitar jovens em vulnerabilidade social através da educação digital, promovendo inclusão e oportunidades
+        para um futuro melhor.</p>
+    </div>
+    <div class="card-mvv">
+      <h2>Visão</h2>
+      <p>Ser referência na transformação social por meio da tecnologia, impactando positivamente a vida de milhares de
+        jovens em todo o país.</p>
+    </div>
+    <div class="card-mvv">
+      <h2>Valores</h2>
+      <p>Inclusão, Educação, Solidariedade, Inovação e Compromisso com a comunidade.</p>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <h2>🕰️ Histórico<h2>
+        <p>A ConecTodos nasceu em 2020, durante um projeto acadêmico que buscava entender como a tecnologia
+          poderia reduzir desigualdades.
+          O que começou como uma iniciativa estudantil se transformou em uma rede colaborativa de voluntários, empresas
+          parceiras e educadores comprometidos em promover o acesso digital.
+          Hoje, já impactamos centenas de jovens, oferecendo cursos gratuitos de informática, programação e cidadania
+          digital em diversas comunidades.
+        </p>
+  </div>
+  <div class="info-section">
+    <h2>🏆 Conquistas</h2>
+    <p>Mais de 500 jovens capacitados em habilidades digitais básicas e intermediárias;
+
+    <ul>
+      <li>Parcerias com escolas e empresas de tecnologia;</li>
+      <li>Criação de um laboratório comunitário de informática;</li>
+      <li>Reconhecimento em programas de inovação social locais;</li>
+      <li>Certificação de voluntários e mentorias personalizadas para jovens talentos.</li>
+      <li>Essas conquistas refletem o compromisso da ONG em construir um futuro mais conectado e igualitário.</li>
+      </p>
+    </ul>
+  </div>
+
+  <div class="info-section">
+
+    <h2>📊 Relatórios de Transparência</h2>
+    <p>A transparência é um dos nossos maiores compromissos.
+      Todos os nossos relatórios financeiros, de impacto e de projetos são públicos e revisados periodicamente.
+      Neles, apresentamos:
+
+    <p>Origem e aplicação dos recursos;
+      Resultados das campanhas de doação;
+      Indicadores de desempenho e metas atingidas;
+      Depoimentos de participantes e voluntários.
+      Esses relatórios podem ser acessados gratuitamente em nossa Central de Documentos Públicos, reforçando nossa
+      responsabilidade social e confiança junto à comunidade.</p>
+  </div>
+
+  <div class="info-section">
+    <H2>💌 Newsletter</H2>
+    <p>
+      A newsletter “Conecte-se” é enviada mensalmente aos nossos apoiadores e interessados.
+      Ela traz novidades sobre os projetos, oportunidades de voluntariado, resultados de impacto e formas de participar
+      das campanhas.
+      Assinar é gratuito e uma ótima maneira de acompanhar o crescimento da ONG de perto.
+    </p>
+  </div>
+
+
+  <footer id="contato">
+
+    <div>
+      <ul>
+        <h2>Contato</h2>
+        <li>Contato: (99) 99999-9999</li>
+        <li>Email: conctodos@cnt.com</li>
+        <li>Endereço: Rua dos Bobos, nº0 - Porto Algre, RS</li>
+      </ul>
+    </div>
+
+    <span>
+      <p>&copy 2025 ConecTodos. Todos os direitos reservados.</p>
+    </span>
+  </footer>
+</body>
+
+</html>
