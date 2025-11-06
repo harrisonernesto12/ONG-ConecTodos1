@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+
+
+
+<header class="header">
+
+  <div>
+    <h1>ConecTodos</h1>
+    <p>Transformando vidas através da tecnologia.</p >
+    <nav>
+      <a href="Index.html">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+
+  <div class="card-button">
+    <div class="login-button"> 
+      <a href="cadastro.html" id="loginLink" class="btn-login">Login</a>
+      <button id="logoutBtn" class="btn-login">logout</button>
+      <span id="userLabel" style="margin-left:10px;color:white;"></span>
+    </div>
+  </div>
+</header>
+
+<!-- Modal de login -->
+<div id="loginModal" style="display:none;">
+  <form id="loginForm" style="background:#fff;padding:16px;border-radius:8px;">
+
+    <h3>Login</h3>
+
+    <label for="username">Usuário</label>
+    <input id="username" name="username" required>
+    <label for="password">Senha</label>
+    <input id="password" type="password" name="password" required>
+    <div style="margin-top:8px;">
+      <button type="submit">Entrar</button>
+      <button type="button" id="closeLogin">Cancelar</button>
+    </div>
+    <p id="loginError" style="color:#b00"></p>
+  </form></div>
+
+
+
+    
+<body class="cadastro-body">
+    
+  <div class="cadastro-section">
+   <div>
+   <form action="#" method="get" class="cadastro-conteiner">
+    <h2>Cadastro</h2>
+
+    <p>
+     <label for="inome">Nome</label>
+     <input type = "text" name="nome" id="inome" placeholder="Nome Completo" required>
+    </p>
+    <p>
+    <label for="icpf">CPF</label>
+    <input type="text" name="CPF" id="icpf" placeholder="000.000.000-00" maxlength="14" required>
+     </p>  
+
+    
+    <p>
+      <label for="iemail">E-mail</label>
+      <input type = "text" name="email" id="iemail" placeholder="E-mail" required>
+    </p>              
+    
+    <p>
+      <lable for="itelefone">Telefone</label>
+      <input type = "text" name="telefone" id ="itelefone" placeholder="Telefone" required>
+    </p>
+  
+    <p>
+      <label for="isenha">Senha</label>
+    <input type = "password" name="senha" id="isenha" placeholder="Senha" autocomplete="off" required>
+    </p> 
+
+      <button type="submit">Cadastrar</button>
+
+   </form>
+  </div>
+
+  </div>
+      <script src="script.js"></script>
+</body>
